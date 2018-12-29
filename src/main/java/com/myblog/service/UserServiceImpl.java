@@ -14,12 +14,10 @@ public class UserServiceImpl implements UserService {
 		this.userDao = userDao;
 	}
 
-	@Override
 	public List<User> getAllUsers() {
 		return userDao.getAllUsers();
 	}
 
-	@Override
 	public List<User> getUsersByName(String name) {
 		if (name == null) {
 			throw new RuntimeException("name can't be null");
@@ -27,7 +25,6 @@ public class UserServiceImpl implements UserService {
 		return userDao.getUsersByName(name);
 	}
 
-	@Override
 	public void addUser(String name, int age) {
 		userDao.addUser(name,age);
 		

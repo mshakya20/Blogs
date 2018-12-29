@@ -21,7 +21,8 @@ public class UserController {
 	public List<User>getAllUsers(){
 		return userservice.getAllUsers();
 	}
-	@PostMapping("/")
+	
+	@PostMapping("")
 	public void addUser(String name, int age) {
 		userservice.addUser(name,age);
 	//TO DO	 stuff in git

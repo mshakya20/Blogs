@@ -36,7 +36,6 @@ public class SpringUserDaoImpl implements UserDao {
 		
 	}
 
-	@Override
 	public List<User> getAllUsers() {
 		String selectSql = "select * from user";
 		List<User> allUsers = new ArrayList<User>();
